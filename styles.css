@@ -21,10 +21,10 @@ a {
 
 /* Barra de navegación */
 header {
-    background-color: #000;
+    background-color: #000; /* Negro */
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Alinea el contenido entre izquierda y derecha */
     align-items: center;
     position: fixed;
     width: 100%;
@@ -32,27 +32,43 @@ header {
     z-index: 100;
 }
 
+/* Logo pequeño a la izquierda */
 header .logo {
-    font-size: 28px;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-size: 22px; /* Tamaño más pequeño para el logo */
 }
 
+header .logo img {
+    width: 40px; /* Tamaño pequeño de la imagen */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el texto de JokeCoin */
 header .joke {
     color: #FFD700; /* Amarillo para Joke */
+    font-weight: bold;
+    font-size: 20px;
 }
 
 header .coin {
-    color: #fff;
+    color: #fff; /* Blanco para Coin */
+    font-weight: bold;
+    font-size: 20px;
 }
 
+/* Menú hamburguesa */
 button.menu-hamburguesa {
     background: none;
     border: none;
     color: #fff;
     font-size: 30px;
     cursor: pointer;
+    margin-left: auto; /* Alinea a la derecha */
 }
 
+/* Estilo para el menú desplegable */
 nav.menu-desplegable {
     display: none;
 }
@@ -84,105 +100,4 @@ nav.menu-desplegable ul li a {
 
 nav.menu-desplegable ul li a:hover {
     background-color: #444;
-}
-
-/* Imagen de fondo */
-.fondo {
-    background-image: url('img/fondo.jpg'); /* Añadir tu imagen en la carpeta img */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    opacity: 0.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.contenido-fondo {
-    z-index: 10;
-}
-
-.texto-rotativo {
-    display: flex;
-    flex-direction: column;
-    animation: rotar 5s infinite;
-}
-
-.texto-rotativo .palabra {
-    font-size: 24px;
-    margin: 10px;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes rotar {
-    0% { opacity: 1; }
-    20% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Sección Qué es Jokecoin */
-.que-es {
-    margin-top: 120px;
-    padding: 50px;
-    background-color: #222;
-    text-align: center;
-}
-
-.que-es h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-/* Ventajas */
-.ventajas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #111;
-}
-
-.ventaja {
-    text-align: center;
-    margin: 10px;
-    flex: 1 1 20%;
-}
-
-.ventaja img {
-    width: 60px;
-    height: 60px;
-}
-
-.ventaja p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-/* Métodos de pago */
-.metodos-pago {
-    padding: 20px;
-    background-color: #222;
-    text-align: center;
-}
-
-.metodos-pago ul {
-    list-style: none;
-    padding: 0;
-}
-
-.metodos-pago ul li {
-    margin: 10px;
-}
-
-.metodos-pago a {
-    color: #FFD700;
-    text-decoration: none;
 }
