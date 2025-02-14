@@ -1,0 +1,18 @@
+@media (min-width: 769px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mueve el logo a la izquierda */
+    margin-left: 20px; /* Ajusta según lo necesites */
+  }
+
+  .logo span {
+    font-size: 1.5rem; /* Asegura que el nombre de SamuraiPepe tenga buen tamaño */
+  }
+
+  .main-title {
+    font-size: 6rem !important; /* Mantiene el tamaño del título */
+    text-align: left; /* Mueve el título a la izquierda */
+    margin-left: 20px; /* Ajusta la posición del título */
+  }
+}
