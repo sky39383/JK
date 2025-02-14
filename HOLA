@@ -1,5 +1,13 @@
 @media (min-width: 769px) {
-  /* Logo del encabezado */
+  /* Asegúrate de que los estilos solo afecten al encabezado */
+  header {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido al inicio */
+    align-items: center;
+    padding: 0 20px; /* Añade algo de espacio alrededor si es necesario */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -8,15 +16,26 @@
   }
 
   .logo span {
-    font-size: 4rem !important; /* Tamaño más grande del nombre, forzado */
+    font-size: 4rem; /* Tamaño más grande del nombre */
     font-family: var(--brush-font);
     font-weight: bold;
   }
 
-  /* Título del encabezado */
   .main-title {
-    font-size: 6rem !important; /* Mantiene el tamaño del título */
-    text-align: left; /* Mueve el título a la izquierda */
-    margin-left: 20px; /* Ajusta la posición del título */
+    font-size: 6rem; /* Tamaño del título */
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-left: 0px; /* Ajusta la posición del título */
+    padding-left: 20px; /* Añade un poco de espacio a la izquierda si es necesario */
+    display: inline-block; /* Hace que el título esté en línea con el logo */
   }
+
+  /* Aseguramos que no afecte el contenido debajo */
+  main {
+    margin-top: var(--header-height); /* Asegura que el contenido debajo no se solape */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Aquí puedes mantener las reglas previas para móviles si las tienes */
+  /* Si no se necesitan cambios, puedes omitir este bloque o ajustarlo */
 }
